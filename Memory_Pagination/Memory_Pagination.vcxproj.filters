@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Output">
+      <UniqueIdentifier>{edaa5e8e-6d11-47e8-844e-899cb6076020}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Memory_Pagination.h">
@@ -34,6 +37,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="CMemory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Structure.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -65,5 +71,10 @@
     <Image Include="res\Memory_Pagination.ico">
       <Filter>资源文件</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Little Prince.txt">
+      <Filter>Output</Filter>
+    </Text>
   </ItemGroup>
 </Project>

@@ -39,4 +39,6 @@ public:
 	CComboBox m_cbPageNum;	// Control of the page number of the map Widnow
 	CString m_strContent;	// Multi-line edit control that displays the file content in the map window.
 	CString m_strMemory;	// Edit control that display the memory page number in the map window
+	CEdit pageNum;
+	CEdit text;
 };

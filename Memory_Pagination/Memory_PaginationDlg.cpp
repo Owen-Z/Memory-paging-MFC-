@@ -60,6 +60,8 @@ void CMemoryPaginationDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
 	DDX_Control(pDX, IDC_COMBO1, m_cbPageNum);
+	DDX_Control(pDX, IDC_EDIT1, pageNum);
+	DDX_Control(pDX, IDC_EDIT2, text);
 }
 
 BEGIN_MESSAGE_MAP(CMemoryPaginationDlg, CDialogEx)
@@ -184,5 +186,13 @@ void CMemoryPaginationDlg::OnBnClickedButton2()
 // Click button open file
 void CMemoryPaginationDlg::OnBnClickedButton3()
 {
-	// TODO: 在此添加控件通知处理程序代码
+	CFileDialog dlg(TRUE); // TRUE is to tell the dialog is used as an open CFileDialog.
+	if (dlg.DoModal() == IDOK)
+	{
+		// get the full path name of the selected file.
+		CString fullPathName = dlg.GetPathName(); 
+
+		pageNum.SetWindowTextW(fullPathName);
+	}
+	
 }
