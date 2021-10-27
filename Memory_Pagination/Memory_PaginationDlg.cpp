@@ -191,8 +191,14 @@ void CMemoryPaginationDlg::OnBnClickedButton3()
 	{
 		// get the full path name of the selected file.
 		CString fullPathName = dlg.GetPathName(); 
+		cMemory = new CMemory();
 
-		pageNum.SetWindowTextW(fullPathName);
+		if (cMemory->LoadFile(fullPathName)) {
+			int a = cMemory->m_pMemory[1]->no;
+			text.SetWindowTextW(_T("DD"));
+		}
+		// Start to read file
+
 	}
 	
 }

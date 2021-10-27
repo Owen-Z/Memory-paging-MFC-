@@ -3,6 +3,7 @@
 //
 
 #pragma once
+#include "CMemory.h"
 
 
 // CMemoryPaginationDlg 对话框
@@ -41,4 +42,5 @@ public:
 	CString m_strMemory;	// Edit control that display the memory page number in the map window
 	CEdit pageNum;
 	CEdit text;
+	CMemory* cMemory;
 };
